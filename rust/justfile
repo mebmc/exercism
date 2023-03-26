@@ -1,0 +1,7 @@
+#!/opt/homebrew/bin/just
+
+default:
+  @just --list
+
+test:
+  @(cd "{{invocation_directory()}}" && cargo test -- --ignored)
